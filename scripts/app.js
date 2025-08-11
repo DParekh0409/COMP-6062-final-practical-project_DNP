@@ -22,6 +22,10 @@ const app= Vue.createApp({
             },
         }
     },
+    created() {
+        this.fetchrandUser();
+        this.randWeather();
+    },
     methods: {
         fetchrandUser() {
             fetch("https://comp6062.liamstewart.ca/random-user-data")
@@ -64,7 +68,7 @@ const app= Vue.createApp({
             .catch(error => {
                 console.log("Failure");
             });
-        },
-    },
+        }
+    }
 });
-app.mount("#app");
+app.mount("#app")
