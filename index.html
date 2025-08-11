@@ -23,12 +23,14 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h2>Weather</h2>
-                    <p>City: {{randWeather.City}}</p>
-                    <p>Province: {{randWeather.Province}}</p>
-                    <p>Country: {{randWeather.Country}}</p>
-                    <div>
-                        <button @click="fetchrandWeather">Get Weather Data </button>
+                    <div class="Weather">
+                        <h2>Weather</h2>
+                        <p>City: {{randWeather.City}}</p>
+                        <p>Province: {{randWeather.Province}}</p>
+                        <p>Country: {{randWeather.Country}}</p>
+                        <div>
+                            <button @click="fetchrandWeather">Get Weather Data </button>
+                        </div>
                     </div>
                 </div>
             </div> 
@@ -37,4 +39,5 @@
         <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
         <script src="scripts/app.js"></script>
     </body>   
-</html>    
+</html>  
+  
